@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply container
+  }
+
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    @apply bg-purple-50;
+    border-radius: 10px;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-purple-500 to-purple-700 rounded-full shadow-md;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-purple-700 to-purple-900;
+  }
+  
+
+}
